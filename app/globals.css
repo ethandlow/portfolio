@@ -25,9 +25,15 @@ body {
   outline-offset: 3px;
 }
 
-/* Scroll margin so sticky nav doesn't cover anchors */
+/* Scroll margin so sticky nav doesn't cover anchors + dramatic fade */
 section[id] {
   scroll-margin-top: 80px;
+  opacity: 0;
+  transition: opacity 1.2s ease-out;
+}
+
+section[id].section-visible {
+  opacity: 1;
 }
 
 /* Thin scrollbar */
