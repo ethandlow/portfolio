@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
@@ -20,35 +19,25 @@ export function Navbar() {
                 aria-label="Main navigation"
             >
                 {/* Logo / Name */}
-                <Link
+                <a
                     href="#about"
                     className="text-[#ededed] font-medium text-sm tracking-wide hover:text-[#2dd4bf] transition-colors duration-200"
                 >
                     Ethan Low
-                </Link>
+                </a>
 
                 {/* Desktop nav */}
                 <ul className="hidden sm:flex items-center gap-8" role="list">
                     {navLinks.map((link) => (
                         <li key={link.href}>
-                            <Link
+                            <a
                                 href={link.href}
                                 className="text-[#9a9a9a] text-sm hover:text-[#ededed] transition-colors duration-200"
                             >
                                 {link.label}
-                            </Link>
+                            </a>
                         </li>
                     ))}
-                    <li>
-                        <a
-                            href="/resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm px-4 py-1.5 rounded-md border border-white/15 text-[#9a9a9a] hover:text-[#ededed] hover:border-white/30 transition-all duration-200"
-                        >
-                            Resume ↗
-                        </a>
-                    </li>
                 </ul>
 
                 {/* Mobile menu button */}
@@ -76,25 +65,15 @@ export function Navbar() {
                     <ul className="flex flex-col gap-4" role="list">
                         {navLinks.map((link) => (
                             <li key={link.href}>
-                                <Link
+                                <a
                                     href={link.href}
                                     className="text-[#9a9a9a] text-sm hover:text-[#ededed] transition-colors duration-200 block py-1"
                                     onClick={() => setMenuOpen(false)}
                                 >
                                     {link.label}
-                                </Link>
+                                </a>
                             </li>
                         ))}
-                        <li>
-                            <a
-                                href="/resume.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-sm text-[#9a9a9a] hover:text-[#ededed] transition-colors duration-200 block py-1"
-                            >
-                                Resume ↗
-                            </a>
-                        </li>
                     </ul>
                 </div>
             )}

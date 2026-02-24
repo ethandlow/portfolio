@@ -9,20 +9,20 @@ export function Footer() {
                 </p>
                 <div className="flex items-center gap-6">
                     <a
-                        href="https://github.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[#9a9a9a] text-sm hover:text-[#ededed] transition-colors duration-200"
-                    >
-                        GitHub ↗
-                    </a>
-                    <a
-                        href="https://linkedin.com"
+                        href="https://linkedin.com/in/ethandlow"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[#9a9a9a] text-sm hover:text-[#ededed] transition-colors duration-200"
                     >
                         LinkedIn ↗
+                    </a>
+                    <a
+                        href="https://discord.gg/qjZgYt24yD"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#9a9a9a] text-sm hover:text-[#ededed] transition-colors duration-200"
+                    >
+                        Discord ↗
                     </a>
                 </div>
             </div>

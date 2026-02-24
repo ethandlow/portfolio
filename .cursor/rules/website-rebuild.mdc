@@ -1,0 +1,15 @@
+---
+description: Run rebuild and dev server after modifying the website
+globs: app/**/*,components/**/*,content/**/*,public/**/*,*.tsx,*.css
+alwaysApply: false
+---
+
+# Website rebuild after changes
+
+When you modify any part of the website (app, components, content, public assets, or related config), run the rebuild and dev script so the site is built and the dev server is started:
+
+```bash
+npm run rebuild:dev
+```
+
+This runs `next build` then `next dev`. Run it after making changes so the user can preview the site.
